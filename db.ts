@@ -1,9 +1,11 @@
 import { Project } from "./types/Project";
 import { Workplace } from "./types/Workplace";
+import { Technology } from "./types/Technology";
 
 export const data: {
   projects: Project[];
   workplaces: Workplace[];
+  technologies: Technology[];
 } = {
   projects: [
     {
@@ -109,6 +111,13 @@ export const data: {
         secondary: [],
       },
     },
+  ],
+  technologies: [
+    { id: "react", description: "react description", icon: "react.png" },
+    { id: "nuxt", description: "nuxt description", icon: "nuxt.png" },
+    { id: "vue", description: "vue description", icon: "vue.png" },
+    { id: "next", description: "next description", icon: "next.png" },
+    { id: "graphql", description: "graphql description", icon: "graphql.png" },
   ],
 };
 
